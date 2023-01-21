@@ -1,15 +1,27 @@
 .team {
-	padding: 94px 0;
+	padding: 60px 0;
 	background-color: var(--section-color-background);
 
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0;
+	}
 	&__block {
+		flex-wrap: wrap;
 		display: flex;
+		text-align: center;
+		justify-content: center;
 		gap: 30px;
 	}
 
 	&__group {
-		padding: 30px;
+		padding: 30px 122px 24px;
 		background-color: var(--logo-color-footer);
+		@media screen and (min-width: 768px) {
+			padding: 30px 74px 24px;
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 30px 32px;
+		}
 	}
 
 	&__img {
