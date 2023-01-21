@@ -37,17 +37,12 @@ h1 {
 	}
 }
 .section-wrap {
-	padding: 94px 0;
+	padding: 60px 0;
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0;
+	}
 }
-.subtitle {
-	margin: 0 0 10px 0;
-	color: var(--primary-text-color);
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.1;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-}
+
 .subtext {
 	margin: 0 auto;
 	color: var(--primary-address-color);
