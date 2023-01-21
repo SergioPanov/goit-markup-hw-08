@@ -642,6 +642,12 @@ h1 {
 
 .service {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .service {
+    display: block;
+  }
 }
 .service__block {
   display: -webkit-box;

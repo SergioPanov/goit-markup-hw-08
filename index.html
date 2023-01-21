@@ -99,23 +99,54 @@
             </div>
             </div> 
          </section> -->
-        <!-- <section class="service">
+         <!-- Чим ми займаємось  -->
+        <section class="service">
             <div class="container">
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="service__block list">
-                    <li class="service__list"><img class="img-list" src="./images/box1.jpg" width="370"
-                            alt="програмування">
+                    <li class="service__list">
+                        <!-- <img class="img-list" src="./images/box1.jpg" width="370" alt="програмування"> -->
+                        <picture>
+                            <source
+                              type="image/jpeg"
+                              srcset="
+                                ./images/service1-desktop.jpg 1x,
+                                ./images/service1-desktop-2x.jpg 2x
+                              "
+                              media="(min-width:1200px)"
+                            />
+                            <img src="./images/service1-desktop.jpg" alt="Десктопні додатки" />
+                          
                         <p class="service__text">Десктопні додатки</p>
                     </li>
-                    <li class="service__list"><img class="img-list" src="./images/1img.jpg" width="370" alt="телефон">
+                    <li class="service__list">
+                        <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/service2-desktop.jpg 1x,
+                          ./images/service2-desktop-2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <img src="./images/service2-desktop.jpg" alt="Мобільні додатки" />
                         <p class="service__text">Мобільні додатки</p>
                     </li>
-                    <li class="service__list"><img class="img-list" src="./images/2img.jpg" width="370" alt="колір">
+                    <li class="service__list">
+                        <source
+                              type="image/jpeg"
+                              srcset="
+                                ./images/service3-desktop.jpg 1x,
+                                ./images/service3-desktop-2x.jpg 2x
+                              "
+                              media="(min-width:1200px)"
+                            />
+                            <img src="./images/service3-desktop.jpg" alt="Десктопні додатки" />
                         <p class="service__text">Дизайнерські рішення</p>
+                    </picture>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 <!-- Наша Команда -->
          <!-- <section class="team">
             <div class="container">
