@@ -3,18 +3,32 @@
 	&__logo {
 		padding: 24px 0 25px 0;
 	}
+
 	&__container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		display: block;
+		padding: 0;
+		position: relative;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
+
 	&__nav {
-		display: flex;
-		flex-grow: 1;
-		justify-content: start;
-		align-items: center;
-		gap: 93px;
+		display: block;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 93px;
+		}
 	}
+
 	&__list {
 		position: relative;
 	}
@@ -52,15 +66,33 @@
 	}
 
 	&__menu {
-		display: flex;
-		align-items: center;
-		gap: 50px;
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			gap: 50px;
+			padding-left: 0;
+		}
 	}
 	&__contact {
-		display: flex;
-		align-items: center;
-		gap: 50px;
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: flex-start;
+			// align-items: center;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			flex-direction: row;
+			gap: 50px;
+			padding-left: 0;
+		}
 	}
+
 	&__address {
 		margin-bottom: 9px;
 		&:last-child {
