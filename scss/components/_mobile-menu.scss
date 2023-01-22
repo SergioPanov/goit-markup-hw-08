@@ -131,7 +131,6 @@
 }
 
 .mobile-menu-socials {
-	width: 357px;
 	display: flex;
 	align-items: left;
 	justify-content: space-between;
@@ -154,6 +153,6 @@
 
 	@media screen and (min-width: 480px) {
 		font-size: 18px;
-		padding-right: 10px;
+		padding-right: 20px;
 	}
 }

@@ -89,10 +89,15 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
-  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -267,10 +272,16 @@ h1 {
   position: relative;
   padding-left: 24px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-address-color);
+}
+@media screen and (min-width: 480px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
@@ -522,11 +533,23 @@ h1 {
 }
 .modal__link {
   display: inline-block;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 8px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--logo-color-main);
+}
+@media screen and (min-width: 480px) {
+  .modal__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .mobile-header {
@@ -667,7 +690,6 @@ h1 {
 }
 
 .mobile-menu-socials {
-  width: 357px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,7 +720,7 @@ h1 {
 @media screen and (min-width: 480px) {
   .mobile-menu-socials__link {
     font-size: 18px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -934,20 +956,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 190px;
+  height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-@media screen and (min-width: 768px) {
-  .benefits__icons {
-    padding: 25px 142px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__icons {
-    padding: 25px 100px;
-  }
 }
 .benefits__title {
   margin: 0 0 10px 0;
@@ -1036,26 +1048,34 @@ h1 {
   gap: 30px;
 }
 .team__group {
-  padding: 30px 122px 24px;
+  padding: 30px 0 24px;
   background-color: var(--logo-color-footer);
 }
 @media screen and (min-width: 768px) {
   .team__group {
-    padding: 30px 74px 24px;
+    padding: 30px 0 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__group {
-    padding: 30px 32px;
+    padding: 30px 0 32px;
   }
 }
-.team__img {
-  display: block;
-}
 .team__card {
+  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team__name {
   margin: 0 0 10px 0;
@@ -1077,9 +1097,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 16px;
 }
 .team__icon {
@@ -1342,7 +1362,6 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .footer__field {
-    width: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1354,6 +1373,7 @@ h1 {
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 12px;
+    width: 570px;
   }
 }
 .footer__button {
@@ -1399,7 +1419,7 @@ h1 {
 .footer__email {
   padding: 15px 16px;
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

@@ -8,17 +8,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 25px 190px;
+		height: 120px;
 		margin-bottom: 30px;
 		background: #f5f4fa;
 		border-radius: 4px;
-
-		@media screen and (min-width: 768px) {
-			padding: 25px 142px;
-		}
-		@media screen and (min-width: 1200px) {
-			padding: 25px 100px;
-		}
 	}
 
 	&__title {
