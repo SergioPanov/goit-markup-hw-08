@@ -63,9 +63,12 @@
 	}
 
 	&__wrap {
-		max-width: 696px;
+		max-width: 360px;
 		margin-left: auto;
 		margin-right: auto;
+		@media screen and (min-width: 1200px) {
+			max-width: 696px;
+		}
 	}
 	&__button {
 		padding: 10px 32px;

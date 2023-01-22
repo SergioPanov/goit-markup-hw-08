@@ -5,7 +5,6 @@
 	align-items: center;
 }
 
-
 .menu-toggle {
 	position: absolute;
 	top: 16px;
@@ -113,6 +112,7 @@
 }
 
 .mobile-menu-contacts__link {
+	font-style: normal;
 	color: inherit;
 	font-weight: 500;
 	font-size: 24px;
@@ -131,15 +131,10 @@
 }
 
 .mobile-menu-socials {
+	width: 357px;
 	display: flex;
-	align-items: center;
+	align-items: left;
 	justify-content: space-between;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.mobile-menu-socials__item {
-	display: inline-flex;
 	gap: 10px;
 }
 
@@ -149,6 +144,7 @@
 }
 
 .mobile-menu-socials__link {
+	font-style: normal;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 1.22;
